@@ -5,15 +5,17 @@ services:
     image: mysql:8.0
     container_name: Localmysql
     environment:
-      MYSQL_ROOT_PASSWORD: root2  # Set the root password
-      MYSQL_DATABASE: clubworldcup  # Optional: Create a database on startup
+      MYSQL_ROOT_PASSWORD: root2
+      MYSQL_DATABASE: clubworldcup
     ports:
-      - "3307:3306"  # Host port : Container port
+      - "3307:3306"
     volumes:
       - mysql-data:/var/lib/mysql
 
   springboot:
-    image: club-world-cup-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: springboot_app
     depends_on:
       - mysql
