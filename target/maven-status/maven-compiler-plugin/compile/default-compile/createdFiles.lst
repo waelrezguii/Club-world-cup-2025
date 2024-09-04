@@ -1,0 +1,16 @@
+com\cw\club_world_cup\controller\PlayersController.class
+com\cw\club_world_cup\config\CorsConfig.class
+com\cw\club_world_cup\model\Teams.class
+com\cw\club_world_cup\controller\TeamsController.class
+com\cw\club_world_cup\service\PlayersService.class
+com\cw\club_world_cup\repository\PlayersRepository.class
+com\cw\club_world_cup\controller\UsersController.class
+com\cw\club_world_cup\repository\TeamsRepository.class
+com\cw\club_world_cup\model\Players.class
+com\cw\club_world_cup\repository\UsersRepository.class
+com\cw\club_world_cup\service\UsersServiceImpl.class
+com\cw\club_world_cup\ClubWorldCup2025Application.class
+com\cw\club_world_cup\model\Users.class
+com\cw\club_world_cup\service\TeamsService.class
+com\cw\club_world_cup\config\SecurityConfig.class
+com\cw\club_world_cup\service\UsersService.class

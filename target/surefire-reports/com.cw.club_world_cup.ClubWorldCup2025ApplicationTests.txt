@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cw.club_world_cup.ClubWorldCup2025ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.960 s -- in com.cw.club_world_cup.ClubWorldCup2025ApplicationTests

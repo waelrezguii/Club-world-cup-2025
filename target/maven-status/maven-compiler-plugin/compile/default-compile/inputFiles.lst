@@ -1,0 +1,16 @@
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\ClubWorldCup2025Application.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\config\CorsConfig.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\config\SecurityConfig.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\controller\PlayersController.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\controller\TeamsController.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\controller\UsersController.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\model\Players.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\model\Teams.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\model\Users.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\repository\PlayersRepository.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\repository\TeamsRepository.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\repository\UsersRepository.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\service\PlayersService.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\service\TeamsService.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\service\UsersService.java
+D:\intellij\club-world-cup\src\main\java\com\cw\club_world_cup\service\UsersServiceImpl.java
