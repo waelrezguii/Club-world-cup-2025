@@ -18,3 +18,10 @@ services:
 
 volumes:
   mysql-data:
+# Commenting out sensitive values
+# SPRING_DATASOURCE_URL=jdbc:mysql://mysql-a080703-clubworldcup25.c.aivencloud.com:26977/clubworldcup?useSSL=false
+# SPRING_DATASOURCE_USERNAME=avnadmin
+# SPRING_DATASOURCE_PASSWORD=AVNS_dGqsiIXcDA6R84QpNgU
+# SPRING_JPA_HIBERNATE_DDL_AUTO=update
+# SPRING_JPA_SHOW_SQL=true
+# SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQLDialect
