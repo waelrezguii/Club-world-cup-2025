@@ -7,12 +7,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
-                .allowedOrigins("https://club-world-cup-2025.vercel.app") // Your Vercel domain
-                .allowedMethods("GET", "POST", "PUT", "DELETE")
-                .allowedHeaders("Authorization", "Content-Type")
-                .allowCredentials(true); // Allow credentials if needed
-    }
+ @Override
+public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/api/**")
+            .allowedOrigins("https://club-world-cup-2025.vercel.app")
+            .allowedMethods("GET", "POST", "PUT", "DELETE")
+            .allowedHeaders("Authorization", "Content-Type")
+            .allowCredentials(true)
+            .exposedHeaders("Authorization");
+    // Logging for debugging
+    System.out.println("CORS configuration applied");
+}
+
 }
