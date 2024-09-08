@@ -27,7 +27,7 @@ public class UsersController {
         this.usersService = usersService;
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Users loginInfos) {
         Optional<Users> user = usersService.findByEmailAndMdp(loginInfos.getEmail(), loginInfos.getMdp());
@@ -37,6 +37,7 @@ public class UsersController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
         }
     }
+    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody Users newUser) {
