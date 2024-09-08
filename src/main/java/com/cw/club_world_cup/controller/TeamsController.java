@@ -12,6 +12,8 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/teams")
+@CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
+
 public class TeamsController {
     private final TeamsService teamsService;
 
