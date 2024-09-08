@@ -19,7 +19,7 @@ private final PlayersService playersService;
     public PlayersController(PlayersService playersService){
     this.playersService=playersService;
 }
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @GetMapping
     public List<Players> getPlayers(@RequestParam(required = false)String name,  @RequestParam(required = false)String team,@RequestParam(required = false)String pos,@RequestParam(required = false) String nation){
@@ -37,14 +37,14 @@ if(team!=null && pos!=null){
     return playersService.getPlayers();
 }
 }
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @PostMapping
     public ResponseEntity<Players>addPlayer(@RequestBody Players players){
     Players createdPlayer = playersService.addPlayer(players);
     return new ResponseEntity<>(createdPlayer, HttpStatus.CREATED);
 }
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @PutMapping
     public ResponseEntity<Players> updatePlayer(@RequestBody Players players){
@@ -55,7 +55,7 @@ if(resultPlayer != null){
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 }
 }
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @DeleteMapping("/{playerName}")
     public ResponseEntity<String> deletePlayer(@PathVariable String playerName){
