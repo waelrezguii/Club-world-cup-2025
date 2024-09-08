@@ -5,13 +5,12 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {
-    @Override
+  @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**") // Adjust the mapping as per your API endpoints
-                .allowedOrigins("https://club-world-cup-2025.vercel.app") // Allow requests from Angular application
-                .allowedMethods("GET", "POST", "PUT", "DELETE") // Allow specific HTTP methods
-                .allowedHeaders("*")
-                .allowCredentials(true)
-                .maxAge(3600);
+        registry.addMapping("/api/**")
+            .allowedOrigins("https://club-world-cup-2025.vercel.app")
+            .allowedMethods("GET", "POST", "PUT", "DELETE")
+            .allowedHeaders("*")
+            .allowCredentials(true);
     }
 }
