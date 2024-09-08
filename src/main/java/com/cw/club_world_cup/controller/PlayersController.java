@@ -13,7 +13,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/players")
-@CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 public class PlayersController {
 private final PlayersService playersService;
@@ -38,14 +37,12 @@ if(team!=null && pos!=null){
     return playersService.getPlayers();
 }
 }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @PostMapping
     public ResponseEntity<Players>addPlayer(@RequestBody Players players){
     Players createdPlayer = playersService.addPlayer(players);
     return new ResponseEntity<>(createdPlayer, HttpStatus.CREATED);
 }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @PutMapping
     public ResponseEntity<Players> updatePlayer(@RequestBody Players players){
@@ -56,7 +53,6 @@ if(resultPlayer != null){
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 }
 }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @DeleteMapping("/{playerName}")
     public ResponseEntity<String> deletePlayer(@PathVariable String playerName){
