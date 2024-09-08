@@ -13,13 +13,14 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/players")
+@CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
+
 public class PlayersController {
 private final PlayersService playersService;
 @Autowired
     public PlayersController(PlayersService playersService){
     this.playersService=playersService;
 }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
 @GetMapping
     public List<Players> getPlayers(@RequestParam(required = false)String name,  @RequestParam(required = false)String team,@RequestParam(required = false)String pos,@RequestParam(required = false) String nation){
