@@ -19,6 +19,8 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/users")
+@CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
+
 public class UsersController {
     private final UsersService usersService;
 
