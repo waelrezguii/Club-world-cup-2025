@@ -21,11 +21,11 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .cors().and()  // Ensure CORS is at the top
-                .csrf().disable() // Disable CSRF protection
+                .cors().and()  // Enable CORS globally
+                .csrf().disable() // Disable CSRF for simplicity
                 .authorizeRequests(authorize -> authorize
-                        .requestMatchers("/**").permitAll() // Allow all requests
-                        .anyRequest().authenticated()
+                        .requestMatchers("/api/**").permitAll()  // Only apply to your API paths
+                        .anyRequest().authenticated()  // Ensure other requests are authenticated
                 )
                 .formLogin(login -> login
                         .loginPage("/login").permitAll()
