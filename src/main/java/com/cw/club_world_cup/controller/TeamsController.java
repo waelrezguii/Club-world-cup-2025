@@ -12,8 +12,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/teams")
-@CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
-
 public class TeamsController {
     private final TeamsService teamsService;
 
@@ -21,28 +19,24 @@ public class TeamsController {
     public TeamsController(TeamsService teamsService) {
         this.teamsService = teamsService;
     }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
     @GetMapping
     public ResponseEntity<List<Teams>> getAllTeams() {
         List<Teams> teams = teamsService.getAllTeams();
         return new ResponseEntity<>(teams, HttpStatus.OK);
     }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
     @GetMapping("/{id}")
     public ResponseEntity<Teams> getTeamById(@PathVariable String id) {
         Optional<Teams> team = teamsService.getTeamById(id);
         return team.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
     @PostMapping
     public ResponseEntity<Teams> addTeam(@RequestBody Teams team) {
         Teams createdTeam = teamsService.addTeam(team);
         return new ResponseEntity<>(createdTeam, HttpStatus.CREATED);
     }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
     @PutMapping("/{id}")
     public ResponseEntity<Teams> updateTeam(@PathVariable String id, @RequestBody Teams team) {
@@ -53,7 +47,6 @@ public class TeamsController {
         Teams updatedTeam = teamsService.updateTeam(team);
         return ResponseEntity.ok(updatedTeam);
     }
-    @CrossOrigin(origins = "https://club-world-cup-2025.vercel.app")
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteTeam(@PathVariable String id) {
