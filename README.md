@@ -28,13 +28,13 @@ X-CHANGE is a web application designed to provide real-time exchange rates from 
    git clone https://github.com/waelrezguii/X-CHANGE.git
 2. **Navigate to the project directory**:
    ```bash
-cd X-CHANGE
+   cd X-CHANGE
 3. **Install dependencies**:
    ```bash
-npm install
+   npm install
 4. **Run the application** :
    ```bash
-npm start
+   npm start
 
 
 
