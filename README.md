@@ -1,27 +1,40 @@
-# ClubWorldCup25
+# X-CHANGE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Setup Instructions](#setup-instructions)
+5. [Usage](#usage)
+6. [Future Improvements](#future-improvements)
 
-## Development server
+## Overview
+X-CHANGE is a web application designed to provide real-time exchange rates from Tunisian banks. It also enables users to perform currency conversions and negotiate exchange rates directly with banks.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- **Real-Time Exchange Rate Consultation**: Access up-to-date exchange rates from various Tunisian banks.
+- **Online Currency Conversion**: Perform currency conversions through the application.
+- **Negotiation Platform**: Post currency sale offers and negotiate directly with banks.
 
-## Code scaffolding
+## Technologies Used
+- **Frontend**: Angular, Bootstrap
+- **Backend**: .NET
+- **Database**: MySQL
+- **Version Control**: Git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup Instructions
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/waelrezguii/X-CHANGE.git
+2.Navigate to the project directory
+   ```bash
+cd X-CHANGE
+3.Install dependencies:
+   ```bash
+npm install
+4.Run the application:
+   ```bash
+npm start
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
